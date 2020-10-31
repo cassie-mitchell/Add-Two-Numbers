@@ -1,0 +1,34 @@
+import java.util.Scanner;
+//import the Scanner package which has pre-defined Objects and methods that will allow us to read user input
+
+public class AddTwoNumbers {
+//a class is a blueprint for creating an object
+
+	public static void main(String[] args){
+	//the main method of the AddTwoNumbers class. When the program is run Java will look for the main method to start off with
+	
+  int number1, number2, sum;
+	//declare 3 variables of type integer
+	
+  Scanner scanner1 = new Scanner(System.in);
+	//create a scanner object/instance with the Scanner class attributes. This comes from the package we imported at the beginning.
+
+  System.out.println("Enter first number:");
+  //from the pre-defined System class (that Java imports by default) print a message on the console for the user to read.
+
+		number1 = scanner1.nextInt();
+		//in the variable number1, store the result of applying the nextInt() method to the scanner object we created
+
+		System.out.println("Enter Second Number: ");
+		number2 = scanner1.nextInt();
+		//do the same for the second number
+
+		scanner1.close();
+		//Shut off the scanner
+	
+		sum = number1 + number2;
+		//add the two numbers and store them in a new variable
+		System.out.println("Sum of these numbers: " + sum);
+		//print the sum to the console
+	}
+}
